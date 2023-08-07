@@ -1,0 +1,28 @@
+.row-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sosial-media-hero i {
+  margin: 5px; /* Set left and right margin for the icons */
+}
+
+@media screen and (max-width: 920px) {
+  .dummy-container-footer {
+    margin-top: 30px;
+  }
+
+  .col-img-footer {
+    margin-bottom: 50px;
+    margin-top: 5 0px;
+  }
+
+  .col-img-footer > img {
+    width: 55%;
+  }
+
+  .sosial-media-footer {
+    margin-top: 50px !important;
+  }
+}
