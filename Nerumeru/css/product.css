@@ -115,4 +115,8 @@
   .instagram > h2 {
     font-size: 30px !important;
   }
+
+  .choose-by-categories {
+    margin-top: -20px;
+  }
 }
