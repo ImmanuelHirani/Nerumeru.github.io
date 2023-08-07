@@ -6,7 +6,7 @@
   width: 10px;
   height: 10px;
   border-radius: 100%;
-  background-color: #2762be;
+  background-color: white;
 }
 .carousel-inner {
   border-radius: 10px 10px 10px 10px;
@@ -22,9 +22,34 @@
   margin-top: 150px;
 }
 
+.btn-bedding {
+  background-color: #2762be;
+  color: white;
+  width: 200px;
+}
+
+.btn-bedding:hover {
+  background-color: transparent;
+  border: 3px solid #2762be;
+  color: #3b5998;
+}
+
 /* All Products */
 .all-products {
   margin-top: 150px;
+}
+
+/* detail */
+.detail .bi {
+  color: #2762be;
+}
+
+.detail .badge {
+  background-color: #2762be;
+}
+
+.detail a {
+  background-color: #2762be;
 }
 
 /* Instagram */
@@ -39,22 +64,19 @@
   .card {
     display: block;
     margin: auto;
-  }
-
-  .card > img {
-    width: 250px;
+    width: 250px !important;
   }
 
   .catalog-product {
     margin-top: 10px;
   }
 
-  .choose-by-categories {
+  .choose-by-categories h2 {
     text-align: center;
     margin-top: 65px;
   }
 
-  .all-products {
+  .all-products h2 {
     text-align: center;
     margin-top: 65px;
   }
@@ -72,6 +94,22 @@
 
   .h2-apd {
     font-size: 20px !important;
+  }
+
+  .detail .badge {
+    font-size: 9px !important;
+  }
+
+  .detail h5 {
+    font-size: 15px;
+  }
+
+  .detail p {
+    font-size: 15px;
+  }
+
+  .detail a {
+    font-size: 13px;
   }
 
   .instagram > h2 {
