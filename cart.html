@@ -360,22 +360,60 @@
                   </option>
                 </select>
                 <hr />
-                <h5 class="mt-4 card-title fw-bold text-secondary">
-                  Kurir Pilihan
-                </h5>
-                <div
-                  class="kurir-wrapper d-flex justify-content-between align-content-center"
-                >
-                  <div class="kurir">
-                    <p class="fw-light my-2">J&T (Rp58.000)</p>
-                    <p class="fw-light">Estimasi tiba 16 - 20 Aug</p>
+                <div class="container-kurir d-flex justify-content-between">
+                  <div class="kurir-text">
+                    <h6 class="fw-bold text-secondary">Kurir Pilihan</h6>
+                    <p class="my-2" id="selectedKurir">J&T (Rp58.000)</p>
+                    <p id="selectedEstimation">Estimasi tiba 16 - 20 Aug</p>
                   </div>
-                  <a
-                    href=""
-                    class="text-decoration-none text-link"
-                    style="color: #53b62f"
-                    >Ubah <i class="bi bi-truck" style="color: #53b62f"></i
-                  ></a>
+                  <div class="dropdown-container">
+                    <span
+                      class="dropdown-toggle"
+                      style="color: #53b62f"
+                      type="button"
+                      id="dropdownMenuButton"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      ubah <i class="bi bi-truck" style="color: #53b62f"></i>
+                    </span>
+                    <div class="dropdown mt-4">
+                      <div
+                        class="dropdown-menu scrollable-menu"
+                        aria-labelledby="dropdownMenuButton"
+                      >
+                        <div
+                          class="kurir dropdown-item"
+                          onclick="updateKurir('J&T (Rp58.000)', 'Estimasi tiba 16 - 20 Aug')"
+                        >
+                          <p class="fw-light my-2">J&T (Rp58.000)</p>
+                          <p class="fw-light">Estimasi tiba 16 - 20 Aug</p>
+                        </div>
+                        <div
+                          class="kurir dropdown-item"
+                          onclick="updateKurir('JNE (Rp65.000)', 'Estimasi tiba 17 - 21 Aug')"
+                        >
+                          <p class="fw-light my-2">JNE (Rp65.000)</p>
+                          <p class="fw-light">Estimasi tiba 17 - 21 Aug</p>
+                        </div>
+                        <div
+                          class="kurir dropdown-item"
+                          onclick="updateKurir('GTL (Rp21.500)', 'Estimasi tiba 10 - 12 Aug')"
+                        >
+                          <p class="fw-light my-2">GTL (Rp21.500)</p>
+                          <p class="fw-light">Estimasi tiba 10 - 12 Aug</p>
+                        </div>
+                        <div
+                          class="kurir dropdown-item"
+                          onclick="updateKurir('SiCepat Gokil (Rp35.000)', 'Estimasi tiba 10 - 14 Aug')"
+                        >
+                          <p class="fw-light my-2">SiCepat Gokil (Rp35.000)</p>
+                          <p class="fw-light">Estimasi tiba 10 - 14 Aug</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -991,6 +1029,7 @@
         togglePopup(popupId);
       });
     });
+    // Hallo
 
     // Event listener untuk membatasi jumlah karakter pada textarea
     const noteTextAreas = document.querySelectorAll(".noteTextArea");
@@ -1002,6 +1041,25 @@
         }
       });
     });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const dropdownItems = document.querySelectorAll(".dropdown-item");
+      const selectedCourier = document.querySelector(".selected-courier");
+
+      dropdownItems.forEach((item) => {
+        item.addEventListener("click", function () {
+          selectedCourier.innerHTML = item.innerHTML;
+        });
+      });
+    });
+  </script>
+
+  <script>
+    function updateKurir(kurirText, estimationText) {
+      document.getElementById("selectedKurir").innerText = kurirText;
+      document.getElementById("selectedEstimation").innerText = estimationText;
+    }
   </script>
 
   <script src="js/fitur1.js"></script>

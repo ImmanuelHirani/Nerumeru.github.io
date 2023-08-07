@@ -72,6 +72,12 @@
   font-size: 16px; /* Sesuaikan dengan ukuran font yang diinginkan */
 }
 
+.scrollable-menu {
+  max-height: 200px; /* Adjust the height as needed */
+  overflow-y: auto;
+  scroll-behavior: smooth !important;
+}
+
 @media screen and (max-width: 920px) {
   .card-wrapper {
     font-size: 12px !important;
