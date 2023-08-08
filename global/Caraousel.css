@@ -1,0 +1,48 @@
+.carousel-item {
+  transition: transform 0.5s ease-in-out;
+}
+
+#TestimonialSlider.carousel.slide {
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+#TestimonialSlider.carousel.slide[data-bs-ride="carousel"] .carousel-inner {
+  transition-duration: 0.5s;
+  transition-delay: 3s;
+}
+
+#TestimonialSlider.carousel.slide[data-bs-ride="carousel"]
+  .carousel-inner
+  > .carousel-item.active {
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+}
+
+#TestimonialSlider.carousel.slide[data-bs-ride="carousel"] .carousel-inner {
+  transition: transform 0.5s ease-in-out;
+}
+
+#TestimonialSlider.carousel.slide[data-bs-ride="carousel"].carousel-slide-right
+  .carousel-inner {
+  transform: translateX(-100%);
+}
+
+#TestimonialSlider.carousel.slide[data-bs-ride="carousel"].carousel-slide-right
+  .carousel-item.active {
+  transform: translateX(0);
+}
+
+#TestimonialSlider.carousel.slide[data-bs-ride="carousel"].carousel-slide-left
+  .carousel-inner {
+  transform: translateX(100%);
+}
+
+#TestimonialSlider.carousel.slide[data-bs-ride="carousel"].carousel-slide-left
+  .carousel-item.active {
+  transform: translateX(0);
+}

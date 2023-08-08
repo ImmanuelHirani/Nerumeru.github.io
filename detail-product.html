@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="./global/navbar.css" />
     <link rel="stylesheet" href="./global/footer.css" />
     <link rel="stylesheet" href="Nerumeru/css/detail.css" />
+    <link rel="stylesheet" href="global/Caraousel.css" />
 
     <link
       rel="stylesheet"
@@ -348,7 +349,7 @@
         </div>
         <div
           id="Otherproduct"
-          class="carousel slide carousel-fade"
+          class="carousel slide"
           data-bs-ride="false"
           style="margin-top: -50px"
         >
@@ -533,7 +534,7 @@
               style="color: #2762be"
             ></i>
             <i
-              class="fa-solid fa-circle-chevron-right fa-2x mx-2"
+              class="fa-solid fa-circle-chevron-right fa-2x mx-3"
               aria-hidden="true"
               data-bs-slide="next"
               type="button"
@@ -681,21 +682,6 @@
         document.getElementById("quantity").value = value;
       }
     }
-  </script>
-  <script>
-    // Function to add delay between slide transitions
-    function setCarouselSlideDelay(delay) {
-      var carouselItems = document.getElementsByClassName("carousel-item");
-      for (var i = 0; i < carouselItems.length; i++) {
-        carouselItems[i].style.transitionDelay = delay + "ms";
-      }
-    }
-  </script>
-  <script>
-    // Set the slide delay after the page is loaded
-    document.addEventListener("DOMContentLoaded", function () {
-      setCarouselSlideDelay(100); // Set the delay time (in milliseconds)
-    });
   </script>
 
   <script src="js/fitur1.js"></script>
