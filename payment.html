@@ -148,42 +148,39 @@
         <div class="row">
           <div class="col-lg-6 col-sm-12 col-md-6 mb-3">
             <div class="card rounded" style="width: 100%">
-              <div class="card-header fw-bold" style="background-color: white">
+              <div
+                class="card-header fw-bolder"
+                style="background-color: white"
+              >
                 BCA Virtual Account
               </div>
               <div class="card-body side-btn">
-                <h6 class="card-title fw-bold text-secondary">
-                  Nomor Virtual Account
-                </h6>
-                <div
-                  class="d-flex justify-content-between align-items-baseline"
-                >
-                  <p class="card-text fw-bold">01872309818478179</p>
-                  <a type="button" class="btn fw-bold">Salin</a>
+                <h6 class="card-title text-secondary">Nomor Virtual Account</h6>
+                <div class="d-flex justify-content-between">
+                  <p class="card-text fw-bolder my-auto">01872309818478179</p>
+                  <a type="button" class="btn btn-primary fw-bold">Salin</a>
                 </div>
-                <h6 class="card-title fw-bold text-secondary">
-                  Total Pembayaran
-                </h6>
-                <div
-                  class="d-flex justify-content-between align-items-baseline"
-                >
-                  <p class="card-text fw-bold">Rp. 9.000.000</p>
-                  <a type="button" class="btn fw-bold">Lihat Detail</a>
+                <h6 class="card-title text-secondary mt-3">Total Pembayaran</h6>
+                <div class="d-flex justify-content-between">
+                  <p class="card-text fw-bolder my-auto">Rp. 9.000.000</p>
+                  <a type="button" class="btn btn-primary fw-bold"
+                    >Lihat Detail</a
+                  >
                 </div>
               </div>
             </div>
-            <div class="d-inline-flex column-gap-3" style="width: 100%">
+            <div class="d-inline-flex col-12 column-gap-3">
               <a
                 type="button"
-                class="btn btn-primary text-white fw-bold mt-3"
-                style="width: 55%"
+                class="btn btn-outline-primary btn-check-status fw-bold mt-3"
+                style="width: 65%"
               >
                 Check Status Pembayaran
               </a>
               <a
                 type="button"
-                class="btn btn-primary text-white fw-bold mt-3"
-                style="width: 45%"
+                class="btn btn-primary btn-belanja-lagi fw-bold mt-3"
+                style="width: 35%"
               >
                 Belanja Lagi
               </a>
@@ -193,18 +190,26 @@
           <div class="col-lg-6 col-sm-12 col-md-6">
             <div class="card rounded">
               <div class="card-body text-center">
-                <p class="card-text fw-bold">Selesaikan Pembayaran Dalam</p>
-                <p class="card-text fw-bold">23:45:30</p>
-                <p class="card-text fw-bold">Batas Akhir Pembayaran</p>
-                <p class="card-text fw-bold">Senin, 7 Agustus 2023 07:24 AM</p>
+                <p class="card-text fw-bold text-secondary my-2">
+                  Selesaikan Pembayaran Dalam
+                </p>
+                <p class="card-text fw-bold text-secondary my-2 time">
+                  23:45:30
+                </p>
+                <p class="card-text text-secondary my-2">
+                  Batas Akhir Pembayaran
+                </p>
+                <p class="card-text fw-bold text-secondary my-2">
+                  Senin, 7 Agustus 2023 07:24 AM
+                </p>
               </div>
             </div>
-            <h5>Cara Pembayaran</h5>
+            <h5 class="cara-pembayaran fw-bold my-3">Cara Pembayaran</h5>
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button
-                    class="accordion-button"
+                    class="accordion-button text-secondary fw-semibold fs-5 border-bottom"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseOne"
@@ -219,20 +224,29 @@
                   class="accordion-collapse collapse show"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body">
-                    1. Masukkan Kartu ATM BCA & PIN <br />
-                    2. Pilih menu Transaksi Lainnya > Transfer > ke Rekening BCA
-                    Virtual Account <br />
-                    3. Masukkan 5 angka kode perusahaan untuk Tokopedia (80777)
-                    dan Nomor HP yang terdaftar di akun Tokopedia Anda (Contoh:
-                    80777081314801945) <br />
-                    4. Di halaman konfirmasi, pastikan detil pembayaran sudah
-                    sesuai seperti No WA, Nama, Perusahaan/Produk dan Total
-                    Tagihan <br />
-                    5. Masukkan Jumlah Transfer sesuai dengan Total Tagihan
-                    <br />
-                    6. Ikuti instruksi untuk menyelesaikan transaksi <br />
-                    7. Simpan struk transaksi sebagai bukti pembayaran
+                  <div class="accordion-body p-0 pe-2 mt-3">
+                    <ol>
+                      <li>Masukkan Kartu ATM BCA & PIN</li>
+                      <li>
+                        Pilih menu Transaksi Lainnya > Transfer > ke Rekening
+                        BCA Virtual Account
+                      </li>
+                      <li>
+                        Masukkan 5 angka kode perusahaan untuk Tokopedia (80777)
+                        dan Nomor HP yang terdaftar di akun Tokopedia Anda
+                        (Contoh: 80777081314801945)
+                      </li>
+                      <li>
+                        Di halaman konfirmasi, pastikan detil pembayaran sudah
+                        sesuai seperti No WA, Nama, Perusahaan/Produk dan Total
+                        Tagihan
+                      </li>
+                      <li>
+                        Masukkan Jumlah Transfer sesuai dengan Total Tagihan
+                      </li>
+                      <li>Ikuti instruksi untuk menyelesaikan transaksi</li>
+                      <li>Simpan struk transaksi sebagai bukti pembayaran</li>
+                    </ol>
                   </div>
                 </div>
               </div>
