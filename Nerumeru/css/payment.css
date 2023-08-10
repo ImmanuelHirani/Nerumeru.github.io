@@ -43,7 +43,7 @@
   background-color: white !important;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 920px) {
   .bottom-btn {
     display: block !important;
   }
