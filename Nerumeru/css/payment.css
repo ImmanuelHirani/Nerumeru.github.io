@@ -1,0 +1,61 @@
+/* Payment */
+.payment .side-btn .btn {
+  color: #2762be;
+  border: none;
+  background: none;
+}
+
+.payment .side-btn .btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.payment .btn-check-status {
+  color: #2762be;
+}
+
+.payment .btn-check-status:hover {
+  color: white;
+  background-color: #2762be;
+}
+
+.payment .btn-belanja-lagi {
+  background-color: #2762be;
+}
+
+.btn-check-status,
+.btn-belanja-lagi {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.time {
+  color: #ff7a00 !important;
+}
+
+.cara-pembayaran {
+  color: #2762be;
+}
+
+.accordion-button {
+  box-shadow: none !important;
+  background-color: white !important;
+}
+
+@media screen and (max-width: 920px) {
+  .bottom-btn {
+    display: block !important;
+  }
+  .bottom-btn .btn {
+    width: 100% !important;
+  }
+
+  .cara-pembayaran {
+    font-size: 18px;
+  }
+
+  .accordion-button {
+    font-size: 18px !important;
+  }
+}
