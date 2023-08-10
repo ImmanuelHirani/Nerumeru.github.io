@@ -24,6 +24,12 @@
   background-color: #2762be;
 }
 
+.btn-check-status,
+.btn-belanja-lagi {
+  display: inline-block;
+  vertical-align: top;
+}
+
 .time {
   color: #ff7a00 !important;
 }
@@ -37,7 +43,14 @@
   background-color: white !important;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 990px) {
+  .bottom-btn {
+    display: block !important;
+  }
+  .bottom-btn .btn {
+    width: 100% !important;
+  }
+
   .cara-pembayaran {
     font-size: 18px;
   }
